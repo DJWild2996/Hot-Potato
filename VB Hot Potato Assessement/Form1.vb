@@ -45,7 +45,6 @@ Public Class Form1
         lblWins.Text = "Wins: " & mySetUp.Wins
         lblLoses.Text = "Loses: " & mySetUp.Loses
         pbImage.Image = mySetUp.GameImage
-        'pbImage.Image = mySetUp.SoundEffect
 
         If mySetUp.Wins = +1 Then
             btnHold.Enabled = False
