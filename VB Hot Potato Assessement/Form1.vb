@@ -2,8 +2,8 @@
 
 Public Class Form1
     Dim mySetUp As New SetUp
-    'Reset everything for a new game
 
+    'Reset everything for a new game
     Private Sub PlayAgain(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlayAgain.Click
         mySetUp.Go()
         UpdateDisplay()
@@ -22,7 +22,7 @@ Public Class Form1
         btnThrow.Enabled = True
         btnHold.Enabled = True
     End Sub
-    'Choose to hold the bomb to put the count up in the hope that it does not go off
+    'runs the hold method from the class from the hold button click and sets it so that the buttons hold and throw cannot be used after 6 guesses
     Private Sub HoldBomb(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHold.Click
         mySetUp.Hold()
         UpdateDisplay()
@@ -31,7 +31,7 @@ Public Class Form1
             btnThrow.Enabled = False
         End If
     End Sub
-    'Throw the bomb to the computer hoping it will go off in his hands so you win
+    'runs the shoot away method from the class thorugh the thow away button click and makes it so the player can only throw away twice before the button is turned off
     Private Sub ThrowBomb(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnThrow.Click
         mySetUp.ShootAway()
         UpdateDisplay()
