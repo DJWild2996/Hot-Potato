@@ -22,8 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btnThrow = New System.Windows.Forms.Button()
         Me.btnHold = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
@@ -34,11 +32,7 @@ Partial Class Form1
         Me.lblGuesses = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pbImage = New System.Windows.Forms.PictureBox()
-        Me.imagelist = New System.Windows.Forms.ImageList(Me.components)
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnThrow
@@ -61,7 +55,7 @@ Partial Class Form1
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(509, 332)
+        Me.btnStart.Location = New System.Drawing.Point(498, 330)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(87, 41)
         Me.btnStart.TabIndex = 8
@@ -70,16 +64,16 @@ Partial Class Form1
         '
         'btnNewBomb
         '
-        Me.btnNewBomb.Location = New System.Drawing.Point(416, 332)
+        Me.btnNewBomb.Location = New System.Drawing.Point(404, 330)
         Me.btnNewBomb.Name = "btnNewBomb"
-        Me.btnNewBomb.Size = New System.Drawing.Size(87, 41)
+        Me.btnNewBomb.Size = New System.Drawing.Size(97, 41)
         Me.btnNewBomb.TabIndex = 7
         Me.btnNewBomb.Text = "New Bomb"
         Me.btnNewBomb.UseVisualStyleBackColor = True
         '
         'btnPlayAgain
         '
-        Me.btnPlayAgain.Location = New System.Drawing.Point(323, 332)
+        Me.btnPlayAgain.Location = New System.Drawing.Point(323, 330)
         Me.btnPlayAgain.Name = "btnPlayAgain"
         Me.btnPlayAgain.Size = New System.Drawing.Size(87, 41)
         Me.btnPlayAgain.TabIndex = 6
@@ -127,19 +121,10 @@ Partial Class Form1
         Me.pbImage.Image = Global.VB_Hot_Potato_Assessement.My.Resources.Resources.Hot_potato
         Me.pbImage.Location = New System.Drawing.Point(-4, 0)
         Me.pbImage.Name = "pbImage"
-        Me.pbImage.Size = New System.Drawing.Size(1151, 553)
+        Me.pbImage.Size = New System.Drawing.Size(1158, 553)
         Me.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbImage.TabIndex = 1
         Me.pbImage.TabStop = False
-        '
-        'imagelist
-        '
-        Me.imagelist.ImageStream = CType(resources.GetObject("imagelist.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.imagelist.TransparentColor = System.Drawing.Color.Transparent
-        Me.imagelist.Images.SetKeyName(0, "winner.gif")
-        Me.imagelist.Images.SetKeyName(1, "WinnerTitle.gif")
-        Me.imagelist.Images.SetKeyName(2, "loser.gif")
-        Me.imagelist.Images.SetKeyName(3, "LoserTitle.gif")
         '
         'Form1
         '
@@ -159,7 +144,6 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "HOT POTATO"
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -174,8 +158,5 @@ Partial Class Form1
     Friend WithEvents lblWins As System.Windows.Forms.Label
     Friend WithEvents lblGuesses As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents imagelist As System.Windows.Forms.ImageList
-    Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
