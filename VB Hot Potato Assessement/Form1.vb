@@ -50,7 +50,7 @@ Public Class Form1
             btnThrow.Enabled = False
         End If
         If mySetUp.Wins = +1 Then
-            MsgBox("You Won! This Time")
+            MsgBox("You Won!")
             pbImage.Image = My.Resources.WinnerTitle
         Else
             MsgBox("It didn't explode! He Threw if right back to you!")

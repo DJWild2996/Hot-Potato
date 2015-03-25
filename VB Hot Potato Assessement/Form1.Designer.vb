@@ -37,7 +37,7 @@ Partial Class Form1
         '
         'btnThrow
         '
-        Me.btnThrow.Location = New System.Drawing.Point(473, 471)
+        Me.btnThrow.Location = New System.Drawing.Point(473, 460)
         Me.btnThrow.Name = "btnThrow"
         Me.btnThrow.Size = New System.Drawing.Size(123, 52)
         Me.btnThrow.TabIndex = 10
@@ -46,7 +46,7 @@ Partial Class Form1
         '
         'btnHold
         '
-        Me.btnHold.Location = New System.Drawing.Point(304, 471)
+        Me.btnHold.Location = New System.Drawing.Point(300, 460)
         Me.btnHold.Name = "btnHold"
         Me.btnHold.Size = New System.Drawing.Size(123, 52)
         Me.btnHold.TabIndex = 9
@@ -110,11 +110,11 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(495, 526)
+        Me.Label1.Location = New System.Drawing.Point(504, 515)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 13)
+        Me.Label1.Size = New System.Drawing.Size(64, 13)
         Me.Label1.TabIndex = 14
-        Me.Label1.Text = "(2 CHANCES)"
+        Me.Label1.Text = "(2 Chances)"
         '
         'pbImage
         '

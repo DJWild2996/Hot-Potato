@@ -102,7 +102,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SetUp.vb" />
-    <Compile Include="Testing Matrix.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -166,6 +165,12 @@
   <ItemGroup>
     <Content Include="Resources\kaboom.wav" />
     <Content Include="Resources\Time Bomb.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hot Potato Unit test\Hot Potato Unit test.vbproj">
+      <Project>{8ee3c911-f7b1-4646-8ffc-f58de618876c}</Project>
+      <Name>Hot Potato Unit test</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
